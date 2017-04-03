@@ -104,6 +104,39 @@ I started with the LeNet implementation from the class and google my way to modi
 
 
 
+N ex  | Target               | 1st choice           | 2nd choice           | 3rd choice          
+--------------------------------------------------------------------------------------------------
+990 | No entry             | No entry             | End of all speed and passing limits | Speed limit (20km/h)
+1980 | Speed limit (30km/h) | Speed limit (30km/h) | Speed limit (50km/h) | Go straight or left 
+300 | Roundabout mandatory | Roundabout mandatory | Priority road        | Speed limit (30km/h)
+1320 | No passing           | No passing           | Speed limit (20km/h) | Speed limit (30km/h)
+1350 | Road work            | Road work            | Bumpy road           | Children crossing   
+
+
+
+| Target               | 1st choice prob %   
+------------------------------------------------------------------
+| No entry             |                  1.0
+| Speed limit (30km/h) |                  1.0
+| Roundabout mandatory |                  1.0
+| No passing           |                  1.0
+| Road work            |                  1.0
+In [29]:
+
+
+I was testing with both speed limit 20 and speed limit 30.
+
+Both these had difficulty getting probablity 1%. 
+
+I enhanced the dataset by another factor and this improved speed limit 30.
+
+I think if I had worked on the brightness of the images more this could have helped the speed limit signs as they tend to look similar looking at the results. 
+
+Test set accuracy is around 92.6% but lower than the validation set accuracy of 96.4%
+
+
+
+
 
 
 
