@@ -53,6 +53,24 @@ N = np.float32([[1,0,tx],[0,1,ty]])
 return cv2.warpAffine(img,N,(cols,rows))
 ```
 
+# German Traffic sign images from imternet
+
+I was in Heidelberg for work last month and was planning to take few images myself 
+but was little nervous pulling car on the streets to take pictures of signs :)
+Here are some I grabbed from image search.
+
+<img src="no-passing.png" width="200" >No Passing</img>
+<img src="noentry.png" width="200">No Entry</img>
+<img src="road-work.png" width="200">Road Work</img>
+<img src="round-about.png" width="200">Round About</img>
+<img src="speed-limit30.png" width="200">Speed Limit 30</img>
+
+I also downloaded speed signs of 20kmph and 60kmph but they were not classified as well 
+as 30kmph :)
+
+
+
+
 # Experimentation
 
 DATASET_TIMES = 5 was used to generate 5 times the input data.
